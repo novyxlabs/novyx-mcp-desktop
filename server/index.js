@@ -160,7 +160,8 @@ function buildCommands() {
   const cmds = [];
 
   // 1. uvx (fastest — downloads and runs in isolated env, no install needed)
-  cmds.push(["uvx", PACKAGE]);
+  // --upgrade ensures uvx checks PyPI for newer versions instead of using stale cache
+  cmds.push(["uvx", "--upgrade", PACKAGE]);
 
   // 2. python -m novyx_mcp (works if pip installed)
   const pythons = platform() === "win32"
