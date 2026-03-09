@@ -1,0 +1,73 @@
+{
+  "manifest_version": "0.3",
+  "name": "novyx-mcp",
+  "display_name": "Novyx MCP",
+  "version": "1.0.0",
+  "description": "Persistent memory for AI agents with rollback, audit trails, and semantic search.",
+  "long_description": "Give Claude persistent memory that survives across conversations. Store memories with semantic search, roll back mistakes with time-travel, and audit every operation with cryptographic proof.\n\nWorks instantly with zero config — local SQLite mode requires no API key. Upgrade to cloud for cross-device sync, team sharing, and advanced features.\n\n23 tools, 6 resources, 3 prompts.",
+  "author": {
+    "name": "Novyx Labs",
+    "email": "blake@novyxlabs.com",
+    "url": "https://github.com/novyxlabs"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novyxlabs/novyx-mcp-desktop.git"
+  },
+  "homepage": "https://novyxlabs.com",
+  "documentation": "https://docs.novyxlabs.com",
+  "support": "https://github.com/novyxlabs/novyx-mcp-desktop/issues",
+  "privacy_policies": [
+    "https://novyxlabs.com/privacy"
+  ],
+  "keywords": ["memory", "rollback", "audit", "semantic-search", "knowledge-graph", "local-first"],
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"],
+      "env": {
+        "NOVYX_API_KEY": "${user_config.api_key}"
+      }
+    }
+  },
+  "user_config": {
+    "api_key": {
+      "type": "string",
+      "title": "Novyx API Key",
+      "description": "Optional — leave blank for local-only mode (SQLite, no cloud). Get a free key at novyxlabs.com for cloud sync, team sharing, and advanced features.",
+      "sensitive": true,
+      "required": false
+    }
+  },
+  "tools": [
+    { "name": "remember", "description": "Store a memory with tags, importance, and optional TTL" },
+    { "name": "recall", "description": "Semantic search across stored memories" },
+    { "name": "forget", "description": "Delete a specific memory by ID" },
+    { "name": "memories", "description": "List all memories with optional tag filtering" },
+    { "name": "memory", "description": "Get a single memory by ID" },
+    { "name": "rollback", "description": "Undo operations after a timestamp" },
+    { "name": "audit", "description": "View the full audit trail of memory operations" },
+    { "name": "stats", "description": "Get memory statistics" },
+    { "name": "link", "description": "Create a relationship between two memories" },
+    { "name": "triple", "description": "Add a subject-predicate-object triple to the knowledge graph" },
+    { "name": "triples", "description": "Query the knowledge graph" },
+    { "name": "create_space", "description": "Create an isolated context space" },
+    { "name": "list_spaces", "description": "List all context spaces" },
+    { "name": "get_space", "description": "Get details of a context space" },
+    { "name": "update_space", "description": "Update a context space" },
+    { "name": "delete_space", "description": "Delete a context space" },
+    { "name": "usage", "description": "Check current tier, limits, and usage" },
+    { "name": "share_context", "description": "Share memories with another user (cloud)" },
+    { "name": "replay_timeline", "description": "View full timeline of memory changes (cloud)" },
+    { "name": "replay_snapshot", "description": "Point-in-time memory snapshot (cloud)" },
+    { "name": "replay_lifecycle", "description": "Full lifecycle of a single memory (cloud)" },
+    { "name": "replay_diff", "description": "Compare memory state between timestamps (cloud)" },
+    { "name": "cortex_status", "description": "Check background analysis status (cloud)" }
+  ],
+  "tools_generated": false,
+  "prompts_generated": true
+}

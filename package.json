@@ -1,0 +1,12 @@
+{
+  "name": "novyx-mcp-desktop",
+  "version": "1.0.0",
+  "description": "Desktop Extension for Novyx MCP — one-click install for Claude Desktop",
+  "author": "Novyx Labs <blake@novyxlabs.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novyxlabs/novyx-mcp-desktop.git"
+  },
+  "private": true
+}
