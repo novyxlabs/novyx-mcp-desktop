@@ -1,6 +1,6 @@
 {
   "name": "novyx-mcp-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Desktop Extension for Novyx MCP — one-click install for Claude Desktop",
   "author": "Novyx Labs <blake@novyxlabs.com>",
   "license": "MIT",
