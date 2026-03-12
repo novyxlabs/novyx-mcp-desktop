@@ -1,7 +1,7 @@
 {
   "name": "novyx-mcp-desktop",
   "version": "1.0.3",
-  "description": "Claude Desktop extension for Novyx MCP — persistent memory across sessions and agents. Add to CLAUDE.md to wire up shared context automatically. Rollback, audit trails, knowledge graph, and semantic search.",
+  "description": "Claude Desktop extension for Novyx MCP — persistent memory across sessions and agents. Pairs with CLAUDE.md for multi-agent context sharing. Rollback, audit trails, knowledge graph, and semantic search.",
   "main": "server/index.js",
   "bin": {
     "novyx-mcp-desktop": "server/index.js"
