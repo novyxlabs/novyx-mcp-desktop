@@ -1,7 +1,7 @@
 {
   "name": "novyx-mcp-desktop",
   "version": "1.0.3",
-  "description": "Desktop Extension for Novyx MCP — one-click install for Claude Desktop. Persistent memory for AI agents with rollback, audit trails, and semantic search.",
+  "description": "Claude Desktop extension for Novyx MCP — persistent memory across sessions and agents. Add to CLAUDE.md to wire up shared context automatically. Rollback, audit trails, knowledge graph, and semantic search.",
   "main": "server/index.js",
   "bin": {
     "novyx-mcp-desktop": "server/index.js"
@@ -15,7 +15,10 @@
     "ai",
     "agents",
     "claude",
+    "claude-code",
+    "claude-md",
     "model-context-protocol",
+    "multi-agent",
     "rollback",
     "audit",
     "semantic-search"

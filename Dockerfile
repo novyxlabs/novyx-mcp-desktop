@@ -5,6 +5,7 @@ LABEL org.opencontainers.image.source="https://github.com/novyxlabs/novyx-mcp-de
 LABEL org.opencontainers.image.description="Novyx MCP — persistent memory for AI agents"
 LABEL org.opencontainers.image.licenses="MIT"
 
-RUN pip install --no-cache-dir novyx-mcp==2.1.4
+RUN pip install --no-cache-dir novyx-mcp==2.1.4 \
+    && python -m compileall -q /usr/local/lib/python3.11/site-packages/
 
 ENTRYPOINT ["python", "-m", "novyx_mcp"]
