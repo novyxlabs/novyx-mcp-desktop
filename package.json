@@ -1,12 +1,41 @@
 {
   "name": "novyx-mcp-desktop",
   "version": "1.0.3",
-  "description": "Desktop Extension for Novyx MCP — one-click install for Claude Desktop",
+  "description": "Desktop Extension for Novyx MCP — one-click install for Claude Desktop. Persistent memory for AI agents with rollback, audit trails, and semantic search.",
+  "main": "server/index.js",
+  "bin": {
+    "novyx-mcp-desktop": "server/index.js"
+  },
   "author": "Novyx Labs <blake@novyxlabs.com>",
   "license": "MIT",
+  "keywords": [
+    "mcp",
+    "novyx",
+    "memory",
+    "ai",
+    "agents",
+    "claude",
+    "model-context-protocol",
+    "rollback",
+    "audit",
+    "semantic-search"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/novyxlabs/novyx-mcp-desktop.git"
   },
-  "private": true
+  "homepage": "https://novyxlabs.com",
+  "bugs": {
+    "url": "https://github.com/novyxlabs/novyx-mcp-desktop/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "server/",
+    "manifest.json",
+    "icon.png",
+    "LICENSE",
+    "README.md"
+  ]
 }
