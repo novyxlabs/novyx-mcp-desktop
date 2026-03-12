@@ -2,6 +2,10 @@
 
 Desktop Extension (.mcpb) for [Claude Desktop](https://claude.ai/download). One-click install for persistent AI agent memory with rollback, audit trails, and semantic search.
 
+<a href="https://glama.ai/mcp/servers/novyxlabs/novyx-mcp-desktop">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/novyxlabs/novyx-mcp-desktop/badge" alt="Novyx MCP server" />
+</a>
+
 ## Features
 
 - **Persistent Memory** — Store and recall memories with semantic search
