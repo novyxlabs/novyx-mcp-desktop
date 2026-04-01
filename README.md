@@ -12,7 +12,7 @@ Desktop Extension (.mcpb) for [Claude Desktop](https://claude.ai/download). One-
 - **Local-First** — Works instantly with SQLite, no API key needed
 - **Cloud Upgrade** — Optional cloud sync, team sharing, and advanced features
 
-23 tools, 6 resources, 3 prompts.
+107 tools, 6 resources, 3 prompts.
 
 ## Installation
 
