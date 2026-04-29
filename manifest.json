@@ -2,9 +2,9 @@
   "manifest_version": "0.3",
   "name": "novyx-mcp",
   "display_name": "Novyx MCP",
-  "version": "1.0.3",
-  "description": "Persistent memory for AI agents with rollback, audit trails, and semantic search.",
-  "long_description": "Give Claude persistent memory that survives across conversations. Store memories with semantic search, roll back mistakes with time-travel, and audit every operation with cryptographic proof.\n\nWorks instantly with zero config — local SQLite mode requires no API key. Upgrade to cloud for cross-device sync, team sharing, and advanced features.\n\n23 tools, 6 resources, 3 prompts.",
+  "version": "1.0.5",
+  "description": "Persistent memory + governance for AI agents — rollback, audit trails, policy-as-code, and Runtime v2 missions.",
+  "long_description": "Give Claude persistent memory that survives across conversations. Store memories with semantic search, roll back mistakes with time-travel, and audit every operation with cryptographic proof.\n\nWorks instantly with zero config — local SQLite mode requires no API key. Upgrade to cloud for cross-device sync, team sharing, policy-as-code, approval workflows, governance dashboard, threat intelligence, auto-defense, governed actions, and Runtime v2 agents/missions/capabilities.\n\n120 tools, 6 resources, 3 prompts.",
   "author": {
     "name": "Novyx Labs",
     "email": "blake@novyxlabs.com",
